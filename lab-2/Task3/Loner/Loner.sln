@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loner", "Loner\Loner.csproj", "{C9265E97-77DB-42CE-BBE9-F136D764DE25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9265E97-77DB-42CE-BBE9-F136D764DE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9265E97-77DB-42CE-BBE9-F136D764DE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9265E97-77DB-42CE-BBE9-F136D764DE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9265E97-77DB-42CE-BBE9-F136D764DE25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E02D69F4-866C-4890-B8C1-AD50DD2BC3D3}
+	EndGlobalSection
+EndGlobal
