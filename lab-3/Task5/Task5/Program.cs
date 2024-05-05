@@ -6,19 +6,21 @@ namespace CompositePattern
     class Program
     {
         static void Main(string[] args)
-        {
-            // Створення елемента і текстового вузла
-            LightElementNode element = new LightElementNode("div", DisplayType.Block, ClosingType.WithClosingTag);
-            LightTextNode textNode = new LightTextNode("Sample text");
+        {   
+            LightElementNode body = new LightElementNode("body", DisplayType.Block, ClosingType.WithClosingTag);
+            LightElementNode h1 = new LightElementNode("h1", DisplayType.Block, ClosingType.WithClosingTag);
+            LightTextNode textNode = new LightTextNode("babana dance!");
 
-            // Створення відвідувача
-            IVisitor visitor = new DimensionVisitor();
+            h1.AddChild(textNode);
+            body.AddChild(h1);
 
-            visitor.VisitElement(element);
-            visitor.VisitTextNode(textNode);
+            IIterator iterator = new DepthFirstIterator(body);
+
+            while (iterator.HasNext())
+            {
+                LightNode node = iterator.Next();
+                Console.WriteLine(node.OuterHTML);
+            }
         }
     }
-
-
-
 }
