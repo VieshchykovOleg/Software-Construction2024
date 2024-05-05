@@ -20,6 +20,18 @@ public class LightElementNode : LightNode
     public ClosingType ClosingType { get; }
     public List<string> Classes { get; }
     public int ChildCount => children.Count;
+    public LightNode GetChild(int index)
+    {
+        if (index >= 0 && index < children.Count)
+        {
+            return children[index];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
 
     public LightElementNode(string tagName, DisplayType displayType, ClosingType closingType)
     {
