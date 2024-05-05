@@ -14,6 +14,9 @@ namespace CompositePattern
             h1.AddChild(textNode);
             body.AddChild(h1);
             Console.WriteLine(body.OuterHTML);
+
+            DocumentBuilder builder = new MyDocumentBuilder();
+            builder.BuildDocument();
         }
     }
 
