@@ -7,6 +7,13 @@ using System.Threading.Tasks;
 public class LightElementNode : LightNode
 {
     private List<LightNode> children = new List<LightNode>();
+    private List<string> classes = new List<string>();
+
+    // Додайте метод AddClass для додавання класу
+    public void AddClass(string className)
+    {
+        classes.Add(className);
+    }
 
     public string TagName { get; }
     public DisplayType DisplayType { get; }
