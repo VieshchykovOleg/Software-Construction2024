@@ -7,10 +7,15 @@ namespace CompositePattern
     {
         static void Main(string[] args)
         {
+            // Створення елемента і текстового вузла
             LightElementNode element = new LightElementNode("div", DisplayType.Block, ClosingType.WithClosingTag);
-            IState state = new VisibleState(element);
-            state.Handle();
-            Console.WriteLine(element.OuterHTML);
+            LightTextNode textNode = new LightTextNode("Sample text");
+
+            // Створення відвідувача
+            IVisitor visitor = new DimensionVisitor();
+
+            visitor.VisitElement(element);
+            visitor.VisitTextNode(textNode);
         }
     }
 
